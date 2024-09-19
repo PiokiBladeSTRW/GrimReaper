@@ -1,29 +1,30 @@
 import tkinter as tk
 
 def draw_map(canvas):
+    x,y = 30,30
     cords= {
-        "Town Hall" : (235, 220),
-        "Forsaken Mansion": (235, 175),
-        "Grim Gate" : (235, 120),
-        "Shade Bridge": (235, 90),
-        "En Hill": (250, 90),
-        "Forgotten Cemetary": (285, 90),
-        "Lost Stories": (140, 175),
-        "Atop": (135,120),
-        "Abottom": (135, 150),
-        "Creep Wood": (75,150),
-        "Forsaken Bay": (75, 250),
-        "Lake": (195,250),
-        "Cursed Lighthouse": (30, 250),
-        "Shadow Forest": (30, 160),
-        "F": (75, 335),
-        "E" :(235,335),
-        "G": (235, 300),
-        "Cursed Hollow": (140,300),
-        "Bbottom": (275,300),
-        "Btop": (275, 265),
-        "Cright": (310,265),
-        "D": (310,120)
+        "Town Hall" : (x+205, y+130),
+        "Forsaken Mansion": x+205, y+85),
+        "Grim Gate" : (x+205, y+30),
+        "Shade Bridge": (x+205, y),
+        "En Hill": (x+220, y),
+        "Forgotten Cemetary": (x+255, y),
+        "Lost Stories": (x+110, y+85),
+        "Atop": (x+105,y+30),
+        "Abottom": (x+105, y+60),
+        "Creep Wood": (x+45,y+60),
+        "Forsaken Bay": (x+45, y+160),
+        "Lake": (x+165,y+160),
+        "Cursed Lighthouse": (x, y+160),
+        "Shadow Forest": (x, y+70),
+        "F": (x+45, y+245),
+        "E" :(x+205, y+245),
+        "G": (x+205, y+ 210),
+        "Cursed Hollow": (x+110,y+210),
+        "Bbottom": (x+245,y+210),
+        "Btop": (x+245, y+175),
+        "Cright": (x+ 280,  y+175),
+        "D": (x+280,y+30)
         }
     
 
