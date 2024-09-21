@@ -1,0 +1,10 @@
+{
+    "1": {
+        "welcome": "Welcome to the Town Hall",
+        "description": "A small town known for its dead inhabitants."
+    },
+    "2": {
+        "welcome": "Welcome to Forgotten Cemetary",
+        "description": "A valley shrouded in mystery and legends."
+    }      
+}

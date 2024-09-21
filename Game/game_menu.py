@@ -11,8 +11,8 @@ root.config(bg = 'black')
 
 #Help
 def Help():
-    import Options.Options as Options
-    Options.Help(root)
+    import MenuBar.Options as Option
+    Option.Help(root)
 
 
 #MenuBar
@@ -40,22 +40,23 @@ currentEventDesc = tk.Label(root,
                             justify= 'left',
                             bg='black',
                             fg='white',
-                            font= ("StraightToHell Sinner BB", 25))
+                            font= ("StraightToHell Sinner BB", 20))
 currentEventDesc.pack(side= 'top', pady=50, anchor= 'w')
 
 
-mapVisual = tk.Frame(root, bg='black', width=400, height=350)
-mapVisual.pack(side='bottom', pady=60)
+mapVisual = tk.Frame(root, bg='black', width=550, height=300)
+mapVisual.pack(side='bottom', pady=40)
 
 ###Map Design
 canvas = tk.Canvas(mapVisual,
-                   width=555,
-                   height=400,
+                   width=550,
+                   height=300,
                    bg='black',
                    highlightthickness=1,
                    highlightbackground='yellow')
 canvas.pack()
+
 from Graphics.mapVisuals import draw_map
-draw_map(canvas, x1=0, y1=0, x2=600, y2=450, lineColor= 'white')
+draw_map(canvas, x1=0, y1=-25, x2=600, y2=360, lineColor= 'white')
 
 root.mainloop()
