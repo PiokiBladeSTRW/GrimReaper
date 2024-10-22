@@ -1,5 +1,3 @@
-
-
 def NameGenerator():
     import random
     import os
@@ -17,4 +15,3 @@ def NameGenerator():
     name = first_names[first_n]+' '+last_names[last_n]
 
     return name
-

@@ -1,7 +1,7 @@
 #MainMenu
 import tkinter as tk
 import Auth.log_in as Auth
-#from tkinter import simpledialog
+from tkinter import messagebox
 
 
 def infoEntered(nameE, passE, event=None):
@@ -11,7 +11,10 @@ def infoEntered(nameE, passE, event=None):
     if( Auth.LogIn(usrname, usrpass) ):
         loggedIn = True
         mainMenuW.destroy()
-    
+    else:  
+        messagebox.showwarning(title='!!', message='Invalid Username or Password')
+
+   
 def play_pressed():
     global playPressed, usrnameEntry, usrpassEntry
     
@@ -34,6 +37,7 @@ def play_pressed():
         
     else:
         infoEntered(usrnameEntry, usrpassEntry)
+
 
 
 #Main_Window
