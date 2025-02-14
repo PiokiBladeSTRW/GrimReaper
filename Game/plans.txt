@@ -1,0 +1,10 @@
+Properly Secure User Account Info
+Seperate Player Data from Player Values
+Make a Demo Worlds System
+Make a Demo World Host System :D
+
+Secure Account Format: { 'usrname' : { 'hashed_pass': <>, ---}}
+
+
+
+REMEMEBER, THIS GAME IS DESIGNED FOR LOCAL AND GLOBAL MULTIPLAYER, THAT IS, PLAYERS can and WILL PLAY ON THE SAME DEVICE WITH MULTIPLE ACCOUNTS, HENCE, PER PACKAGE SHOULD BE MULTIPLAYER COMPATIBLE. 
