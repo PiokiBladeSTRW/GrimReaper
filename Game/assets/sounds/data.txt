@@ -1,0 +1,11 @@
+Atmosphere:
+chimeRain
+Wind
+forest
+lake
+
+Ambience:
+chimes
+horror
+crickets
+scratch
