@@ -4,8 +4,9 @@ import tkinter as tk
 import json
 import os
 from texts.baseText import TextManager
-from graphics.mapVisuals import Map
-from menuBar.optionsDisplays import Options
+from sounds.soundManager import soundManager
+from visuals.graphics.mapVisuals import Map
+from visuals.menuBar.optionsDisplays import Options
 
 from clientVal.variables import uuid, selectedWorld
 
@@ -60,6 +61,7 @@ def save():
 
 #Current Event Description & Current Map
 eventText = TextManager(root, textFrame, choiceFrame, currentLocation)
+sounds = soundManager(currentLocation)
 
 mapCanvas = tk.Canvas(mapFrame,
                    width=600,
@@ -81,6 +83,10 @@ def updateWidgets():
     
         #VisualMap Update [Player Markers]            
         townMap.playerMarker(eventText.currentLocation, ViewAcc()[uuid]['usrcolor'])
+
+        #Check for Audio Change
+        sounds.cL = currentLocation
+        sounds.fadeOutSong()
 
         #Update Travel Value
         eventText.playerTravelled = False
