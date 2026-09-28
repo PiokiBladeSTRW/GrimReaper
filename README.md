@@ -1,4 +1,7 @@
-A Grim Reaper Text Game. 
+# A Grim Reaper Text Game. 
+
+## Note: Designed as a Passion Project to be developed among friends, ending up as a Solo Project. Lack of Clear Documentation and Unprofessional README below, beware.
+
 A New generational Experience taking Text Games to the Next Level without any Game Engine and just Raw Python Code!
 
 Stories! Events! Adventure! Thrill! We got it all
